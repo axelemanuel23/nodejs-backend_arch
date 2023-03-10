@@ -1,0 +1,33 @@
+{
+  "name": "axelemanuel23.github.io-backend",
+  "description": "Backend de axelemanuel23.github.io",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelemanuel23/axelemanuel23.github.io-backend.git"
+  },
+  "author": "Lex A",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axelemanuel23/axelemanuel23.github.io-backend/issues"
+  },
+  "homepage": "https://github.com/axelemanuel23/axelemanuel23.github.io-backend#readme",
+  "keywords": [
+    "JavaScript",
+    "NodeJS",
+    "MongoDB"
+  ]
+}
