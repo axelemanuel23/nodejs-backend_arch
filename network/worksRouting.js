@@ -1,10 +1,10 @@
 //EndPoint
 
 const express = require("express");
-const WorksServices = require("../services/worksService");
+const WorksService = require("../services/worksService");
 
 const router = express.Router();
-const service = new WorksServices();
+const service = new WorksService();
 
 router.get("/", (req, res, next) => {
      service.find(req, res, next);

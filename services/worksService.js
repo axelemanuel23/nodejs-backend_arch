@@ -1,7 +1,7 @@
 const boom = require("@hapi/boom");
 const { works } = require("./models");
 
-class WorksServices {
+class WorksService {
     create(req, res, next){
         try{
             const newWork = new works(req.body);
@@ -98,4 +98,4 @@ class WorksServices {
     }
 }
 
-module.exports = { WorksServices };
+module.exports = WorksService ;
