@@ -1,6 +1,6 @@
 const { model, Schema } = require("mongoose");
-const { connection } = require("./mongodbService");
-connection.once("works");
+const { connect } = require("./mongodbService");
+connect("works");
 
 //Meal es la base de la receta ej: hamburguesa
 const userSchema = new Schema({
@@ -12,9 +12,9 @@ const userSchema = new Schema({
 const workSchema = new Schema({
   user: String,
   receptionDate: Date,
-  isWorking: boolean,
+  isWorking: Boolean,
   deliveryDate: Date,
-  price: float
+  price: Number
 })
 
 
