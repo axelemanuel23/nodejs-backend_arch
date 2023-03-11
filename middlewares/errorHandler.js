@@ -28,7 +28,7 @@ function mongoErrorHandler(err, req, res, next){
     next(err);
 }
 
-/*
+
 function defaultErrorHandler(err, req, res, next){
     console.group("ERROR HANDLER");
     res.status(500)
@@ -38,6 +38,6 @@ function defaultErrorHandler(err, req, res, next){
         });
     console.groupEnd("ERROR HANDLER");
 }
-*/
+
 
 module.exports = { logErrors, boomErrorHandler, mongoErrorHandler, defaultErrorHandler };
