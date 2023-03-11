@@ -1,18 +1,17 @@
 const { model, Schema } = require("mongoose");
 const { connect } = require("./mongodbService");
-connect("works");
+connect("tecnomixservices");
 
-//Meal es la base de la receta ej: hamburguesa
 const userSchema = new Schema({
   name: String,
   email: String
 });
 
-//Topic son los aditivos que se le pueden agregar, ej: bacon, queso, huevo, jamon
 const workSchema = new Schema({
   user: String,
+  description: String,
   receptionDate: Date,
-  isWorking: Boolean,
+  finished: Boolean,
   deliveryDate: Date,
   price: Number
 })
