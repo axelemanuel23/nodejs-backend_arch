@@ -13,6 +13,9 @@ const workSchema = new Schema({
   receptionDate: Date,
   finished: Boolean,
   deliveryDate: Date,
+  delivered: Boolean,
+  accesories: String,
+  notes: String,
   price: Number
 })
 
