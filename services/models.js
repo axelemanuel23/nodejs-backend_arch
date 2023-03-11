@@ -4,7 +4,7 @@ connect("tecnomixservices");
 
 const userSchema = new Schema({
   name: String,
-  number: Number
+  phone: Number
 });
 
 const workSchema = new Schema({
