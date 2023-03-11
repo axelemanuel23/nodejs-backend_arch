@@ -14,6 +14,22 @@ class WorksService {
             next(err)
         }
     }
+    
+    //Get All
+    async find(req, res, next){
+        try{
+            const list = await works.find();
+            res.status(200)
+                .json({
+                    message: "Succeed",
+                    data: list,
+                });
+        }catch(err){
+            err.serviceError = true;
+            next(err)
+        }
+    }
+
     async find(req, res, next){
         try{
             const works = await works.find();
