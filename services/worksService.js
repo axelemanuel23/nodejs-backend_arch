@@ -29,18 +29,7 @@ class WorksService {
             next(err)
         }
     }
-
-    async find(req, res, next){
-        try{
-            const works = await works.find();
-            res.status(200).json({
-                mesage: "Succeed",
-                data: works,
-            })
-        }catch(err){
-            next(err)
-        }
-    }
+    
     async findOne(req, res, next){
         try{
             const work = await works.findById(req.params.id);
