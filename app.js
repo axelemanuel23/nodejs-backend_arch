@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT;
 
-const whitelist = ["http://localhost:3000", "https://to-do-manager-delta.vercel.app", "https://ordermanager-murex.vercel.app"];
+const whitelist = ["http://localhost:3000", "https://tecnomix-backend-production.up.railway.app/"];
 
 app.use(cors({origin: whitelist, methods: ["GET", "POST", "PATCH", "DELETE"]}));
 
