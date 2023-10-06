@@ -17,7 +17,7 @@ function routerApi(app) {
         //Servicios Tecnomix
         router.use("/users", authorizationHandler, usersRouter);
         router.use("/works", authorizationHandler, worksRouter);
-        router.use("/todos", authorizationHandler, todosRouter);
+        router.use("/todomanager", authorizationHandler, todosRouter);
 }
 
 module.exports = routerApi;
