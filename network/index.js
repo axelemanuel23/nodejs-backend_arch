@@ -1,6 +1,7 @@
 const express = require("express");
 const usersRouter = require("./usersRouting");
 const worksRouter = require("./worksRouting");
+const todosRouter = require("./todosRouting");
 const { authorizationHandler } = require("../middlewares/authHandler");
 
 function routerApi(app) {
@@ -16,6 +17,7 @@ function routerApi(app) {
         //Servicios Tecnomix
         router.use("/users", authorizationHandler, usersRouter);
         router.use("/works", authorizationHandler, worksRouter);
+        router.use("/todos", authorizationHandler, todosRouter);
 }
 
 module.exports = routerApi;

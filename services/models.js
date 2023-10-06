@@ -7,6 +7,8 @@ const userSchema = new Schema({
   phone: Number
 });
 
+const users = new model("users", userSchema);
+
 const workSchema = new Schema({
   user: String,
   description: String,
@@ -19,8 +21,14 @@ const workSchema = new Schema({
   price: Number
 })
 
-
-const users = new model("users", userSchema);
 const works = new model("works", workSchema);
 
-module.exports = { users, works };
+const todoSchema = new Schema({
+  text: String,
+  completed: Boolean
+})
+
+const todos = new model("todos", todoSchema);
+
+
+module.exports = { users, works, todos };
