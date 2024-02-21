@@ -1,6 +1,6 @@
 const { model, Schema } = require("mongoose");
 const { connect } = require("./mongodbService");
-connect("tecnomixservices");
+connect("test");
 
 const userSchema = new Schema({
   name: String,
