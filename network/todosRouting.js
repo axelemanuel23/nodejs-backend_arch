@@ -22,13 +22,6 @@ router.get("/:id", (req, res, next) => {
     service.findOne(req, res, next);
 })
 
-// router.put("/:id", (req, res) =>{
-//     const { id } = req.params;
-//     const body = req.body;
-//     service.update(id, body, res);
-// })
-/* ----------------------------------- */
-
 router.patch("/:id", (req, res, next) =>{
     service.update(req, res, next);
 })
