@@ -5,7 +5,7 @@ connect("test");
 const userSchema = new Schema({
   id: String,
   name: String,
-  phone: Number,
+  phone: String,
   email: String,
   address: String
 });
