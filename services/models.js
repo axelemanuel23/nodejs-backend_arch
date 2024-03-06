@@ -3,21 +3,31 @@ const { connect } = require("./mongodbService");
 connect("test");
 
 const userSchema = new Schema({
+  id: String,
   name: String,
-  phone: Number
+  phone: Number,
+  email: String,
+  address: String
 });
 
 const users = new model("users", userSchema);
 
 const workSchema = new Schema({
+  //Datos del cliente
   user: String,
+
+  //Datos del trabajo
   description: String,
-  receptionDate: Date,
-  finished: Boolean,
-  deliveryDate: Date,
-  delivered: Boolean,
   accesories: String,
-  notes: String,
+  receptionDate: Date,
+
+  //Estado
+  finished: Boolean,
+  delivered: Boolean,
+  deliveryDate: Date,
+  
+  //Trabajo hecho
+  notes: Array,
   price: Number
 })
 
