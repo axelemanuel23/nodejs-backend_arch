@@ -6,7 +6,6 @@ const { authorizationHandler } = require("../middlewares/authHandler");
 
 function routerApi(app) {
         const router = express.Router();
-        // app.get("/", express.static("public"));
         app.get("/", (req, res, next) => {
                 res.status(200).json({
                         message: "Succeed",
