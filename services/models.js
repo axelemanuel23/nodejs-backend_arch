@@ -33,7 +33,6 @@ const workSchema = new Schema({
 const works = new model("works", workSchema);
 //------------------------------------------------------------
 const todoSchema = new Schema({
-  _id: String,
   text: String,
   completed: Boolean
 })

@@ -40,7 +40,7 @@ class TodosService {
     //Get One by Id
     async findOne(req, res, next){
         try{
-            const todo = await todos.findById(req.params._id);
+            const todo = await todos.findById(req.params.id);
             if(todo == null){
                 throw boom.notFound("Not found");
             }
@@ -59,7 +59,7 @@ class TodosService {
     //Update One
     async update(req, res, next){
         try{
-            const todo = await todos.findByIdAndUpdate(req.params._id, req.body);
+            const todo = await todos.findByIdAndUpdate(req.params.id, req.body);
             if(todo == null){
                 throw boom.notFound("Not found");
             }
@@ -78,7 +78,7 @@ class TodosService {
 
     async delete(req, res, next){
         try{
-            const todo = await todos.findOneAndDelete({_id: req.params._id});
+            const todo = await todos.findOneAndDelete({_id: req.params.id});
             if(todo == null){
                 throw boom.notFound("Not found");
             }
