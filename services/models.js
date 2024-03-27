@@ -9,9 +9,8 @@ const userSchema = new Schema({
   email: String,
   address: String
 });
-
 const users = new model("users", userSchema);
-
+//------------------------------------------------------------
 const workSchema = new Schema({
   //Datos del cliente
   user: String,
@@ -32,13 +31,13 @@ const workSchema = new Schema({
 })
 
 const works = new model("works", workSchema);
-
+//------------------------------------------------------------
 const todoSchema = new Schema({
   text: String,
   completed: Boolean
 })
 
 const todos = new model("todos", todoSchema);
-
+//------------------------------------------------------------
 
 module.exports = { users, works, todos };

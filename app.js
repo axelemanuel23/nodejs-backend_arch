@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT;
 
-const whitelist = ["http://localhost:3000", process.env.CLIENTSIDE];
+const whitelist = ["http://localhost:3000", "https://todomanager-lex.netlify.app"];
 
 app.use(cors({origin: whitelist, methods: ["GET", "POST", "PATCH", "DELETE"]}));
 
