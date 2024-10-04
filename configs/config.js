@@ -1,9 +1,9 @@
 require("dotenv").config()
 
 const config = {
-    dbUser: process.env.DBUSER,
-    dbPass: process.env.DBPASS,
-    dbCluster: process.env.DBCLUSTER,
+    dbUser: "axelemanuel",
+    dbPass: "axelemanuel",
+    dbCluster: "clusteraxel.u9b2e.mongodb.net/",
 }
 
 module.exports = { config };

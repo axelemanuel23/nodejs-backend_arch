@@ -2,7 +2,7 @@ const boom = require("@hapi/boom");
 
 async function authorizationHandler(req, res, next){
     try{
-        if(req.headers.apikey!=process.env.APIKEY){
+        if(req.headers.apikey!="axel"){
             throw boom.unauthorized("Auth Failed by APIKEY");
         }
         next();
