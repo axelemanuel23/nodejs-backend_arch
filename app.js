@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT;
 
-const whitelist = ["http://localhost:3000", "https://reservas-two-phi.vercel.app/"];
+const whitelist = ["http://localhost:3000", "https://reservas-two-phi.vercel.app"];
 
 app.use(cors({origin: whitelist, methods: ["GET", "POST", "PATCH", "DELETE"]}));
 
